@@ -7,7 +7,7 @@ function per_cuad(lc){
     return lc*4;
 }
 
-function altura_tria_iso(a,b,c){
+function area_tri(a,b,c){
 
     var altura;
     if (a===c && b!==a && b!==c) {
@@ -26,9 +26,9 @@ function altura_tria_iso(a,b,c){
     }
 
     altura=Math.sqrt((l**2)-((base/2)**2))
-    return altura
-}
+    return (altura *base)/2
     
+}
 
 // var lc =5;
 // console.log("los lados del cuadrado miden: "+lc)
