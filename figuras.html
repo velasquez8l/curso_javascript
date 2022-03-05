@@ -7,9 +7,80 @@
     <title>programa figuras geometricas</title>
 </head>
 <body>
-    <h1>
-        Figuras Geometricas
-    </h1>
+    <header>
+        <h1>
+           Figuras geometricas 
+        </h1>
+        <p> Este es el primer taller practico de llava script</p>
+
+    </header>
+    <section>
+        <h2>Calcula el area y perimetro de un cuadrado, circulo y triangulo isosceles</h2>
+        <form>
+            <label for="input_cuad">
+                Escribe cuanto mide el lado del cuadrado
+            </label>
+
+            <input id="input_cuad"  type="number"/>
+
+            <button type="button" onclick="boton_per_cuad()">
+                Calcular perimetro
+            </button>
+
+            <button type="button" onclick="boton_area_cuad()">
+                Calcular area
+            </button>
+        </form>
+
+        <form>
+            <label for="input_circ">
+                Escribe cuanto mide el radio del circulo
+            </label>
+
+            <input id="input_circ"  type="number"/>
+
+            <button type="button" onclick="boton_per_circ()">
+                Calcular perimetro
+            </button>
+
+            <button type="button" onclick="boton_area_circ()">
+                Calcular area
+            </button>
+        </form>
+
+        <form>
+            <div>
+                <label for="input_base">
+                    Escribe cuanto mide la base del triangulo
+                </label>
+
+                <input id="input_base"  type="number"/>
+            </div>
+
+            <div>
+                <label for="input_lado2">
+                    Escribe cuanto mide el segundo lado del triangulo
+                </label>
+
+                <input id="input_lado2"  type="number"/>
+            </div>
+
+            <div>
+                <label for="input_lado3">
+                    Escribe cuanto mide el ultimo lado del triangulo
+                </label>
+                
+                <input id="input_lado3"  type="number"/>
+            </div>
+            <button type="button" onclick="boton_per_tri()">
+                Calcular perimetro
+            </button>
+
+            <button type="button" onclick="boton_area_tri()">
+                Calcular area
+            </button>
+        </form>
+    </section>
     <script src="./figuras.js"> </script>
 </body>
 </html>
